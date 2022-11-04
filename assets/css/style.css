@@ -1,0 +1,156 @@
+html {
+    background: #ffffff;
+    color: #000000;     font-size: 100%;
+}
+
+body {
+    max-width: 100%;
+    font-family: 'Archivo', sans-serif;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+main{
+    margin: 2.5rem 1.5rem;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h1 {
+    color: #ffa500;
+    text-align: left;
+    position: relative;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+h1::before {
+    content: ' ';
+    position: absolute;
+    background-size: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    left: -1.5em;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    display: block;
+    font-size: 1rem;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+h2::before {
+    content: ' ';
+    position: absolute;
+    background-image: url('/assets/images/location.svg');
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    height: 1.8em;
+    width: 1.5em;
+    left: 12.5em;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3, p {
+    font-weight: 300;
+}
+
+h3 {  
+    
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h3.small {
+    
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p {
+    column-width: 160px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+ul {
+    margin: 4rem 0;
+}
+
+ul.links, .links a {
+    text-decoration: none;
+    list-style: none;
+    padding-top: 1.5em;
+}
+
+.links li, .links li a {
+    position: relative;
+    display: block;
+    color: #000000;
+    font-weight: 700;
+}
+
+.links li::after {
+    content: ' ';
+    position: absolute;
+    background-image: url('/assets/images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 2em;
+    height: 2em;
+    width: 2.5em;
+    right: 87.5%;
+    top: 50%;
+    transform: translate(150%, -50%);
+}
+
+.selfie {
+    width: 60%;
+    height: calc(100vw - 15rem);
+    position: relative;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.selfie img {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signature {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    bottom: 50em;
+}
+
+
+/*.box{
+    width: 680;
+    height: 100
+
+
+    
+
+}
+*/
+
+footer {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
+}
